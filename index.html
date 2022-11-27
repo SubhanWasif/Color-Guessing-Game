@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <title>Gussing Colors</title>
+</head>
+<body class="bg-black">
+    <div class="bg-blue-500">
+    <div class="container m-auto flex justify-center p-[60px] content-center text-white">
+        <div id="text" class="text-[50px] ">
+        Random Color Here
+    </div>
+    </div>
+ <div class="bg-white  text-back  ">
+  <div class="container m-auto flex justify-between items-center h-[70px] text-2xl">
+    <button id="button" class="bg-green-100 py-[19px] px-[20px]">
+      Generate
+    </button>
+    <div id="correct" class="bg-green-100 py-[19px] px-[20px]">
+      Correct/Wrong
+    </div>
+  </div>
+ </div>    
+</div>
+
+
+<div class="sqaures container m-auto flex flex-col gap-[20px] my-[70px]">
+    <div  id="sqaure" class="flex gap-[20px] justify-center">
+      <div id="color" class = "cursor-pointer bg-black p-[130px] rounded-[20px]">
+        </div>
+        <div id="color" class = "bg-black p-[130px] rounded-[20px]">
+        </div>
+        <div id="color" class = "bg-black p-[130px] rounded-[20px]">
+        </div>
+    </div>
+    <div class="flex gap-[20px] justify-center">
+      <div id="color" class = "bg-black p-[130px] rounded-[20px]">
+      </div>
+      <div id="color" class = "bg-black p-[130px] rounded-[20px]">
+      </div>
+      <div id="color" class = "bg-black p-[130px] rounded-[20px]">
+      </div>
+    </div>
+</div>
+<script src="srcipt.js"></script>
+</body>
+</html>
